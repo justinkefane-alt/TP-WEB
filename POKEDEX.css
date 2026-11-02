@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+}
+
+#POKEDEX {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* toutes les cartes à la même hauteur */
+    margin: 35px;
+}
+
+.Bullbizare,
+.Salameche,
+.Carapuce {
+    width: 250px;
+    transition: transform 1s;
+}
+
+.Bullbizare img,
+.Salameche img,
+.Carapuce img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; 
+}
+
+.infoBullbizare,
+.infoSalameche,
+.infoCarapuce {
+    flex: 1;
+    margin: 0;
+    padding: 10px 10px 10px 30px; 
+}
+
+.Bullbizare  { background-color: greenyellow; 
+}
+.Salameche   { background-color: red; 
+}
+.Carapuce    { background-color: aqua; 
+}
+
+.infoBullbizare { background-color: rgb(16, 119, 16); 
+}
+.infoSalameche  { background-color: rgb(187, 19, 14); 
+}
+.infoCarapuce   { background-color: rgb(77, 21, 207); 
+}
+
+.Bullbizare:hover,
+.Salameche:hover,
+.Carapuce:hover {
+    transform: translateY(-15px) scale(1.05);
+}

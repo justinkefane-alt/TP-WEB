@@ -1,0 +1,40 @@
+.container {
+  background-color: black;
+  padding: 3em;
+}
+header{
+    background-color: black;
+    color: red;
+    text-align: center;
+font-size: 45px;
+    height: auto;
+}
+input,
+label {
+  color:red;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+
+.form__group {
+  padding: 1em;
+}
+input {
+  border: 2px solid grey;
+  border-radius: 100rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  background: grey;
+  transition : all 1s;
+}
+
+input:focus {
+  border: 2px solid #6300a0;  
+}
+
+input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color:gray;
+}
